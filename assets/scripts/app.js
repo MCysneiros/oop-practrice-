@@ -136,6 +136,7 @@ class App {
   static init() {
     const activeProjectList = new ProjectList('active');
     const finishedProjectList = new ProjectList('finished');
+
     activeProjectList.setSwitchHandlerFunction(
       finishedProjectList.addProject.bind(finishedProjectList)
     );
